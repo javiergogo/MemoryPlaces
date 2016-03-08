@@ -12,6 +12,8 @@
 		0D64ED4A1C0E40A70048B4F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D64ED481C0E40A70048B4F6 /* Main.storyboard */; };
 		0D64ED4C1C0E40A70048B4F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D64ED4B1C0E40A70048B4F6 /* Assets.xcassets */; };
 		0D64ED4F1C0E40A70048B4F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D64ED4D1C0E40A70048B4F6 /* LaunchScreen.storyboard */; };
+		0D64ED571C0E43B70048B4F6 /* ControladorVistaTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D64ED561C0E43B70048B4F6 /* ControladorVistaTable.swift */; };
+		0D64ED591C0E45C70048B4F6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D64ED581C0E45C70048B4F6 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0D64ED4B1C0E40A70048B4F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D64ED4E1C0E40A70048B4F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D64ED501C0E40A70048B4F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D64ED561C0E43B70048B4F6 /* ControladorVistaTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorVistaTable.swift; sourceTree = "<group>"; };
+		0D64ED581C0E45C70048B4F6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D64ED591C0E45C70048B4F6 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,7 @@
 		0D64ED381C0E40A70048B4F6 = {
 			isa = PBXGroup;
 			children = (
+				0D64ED581C0E45C70048B4F6 /* CoreLocation.framework */,
 				0D64ED431C0E40A70048B4F6 /* 17MemorialPlaces */,
 				0D64ED421C0E40A70048B4F6 /* Products */,
 			);
@@ -57,6 +63,7 @@
 				0D64ED441C0E40A70048B4F6 /* AppDelegate.swift */,
 				0D64ED461C0E40A70048B4F6 /* ViewController.swift */,
 				0D64ED481C0E40A70048B4F6 /* Main.storyboard */,
+				0D64ED561C0E43B70048B4F6 /* ControladorVistaTable.swift */,
 				0D64ED4B1C0E40A70048B4F6 /* Assets.xcassets */,
 				0D64ED4D1C0E40A70048B4F6 /* LaunchScreen.storyboard */,
 				0D64ED501C0E40A70048B4F6 /* Info.plist */,
@@ -136,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D64ED471C0E40A70048B4F6 /* ViewController.swift in Sources */,
+				0D64ED571C0E43B70048B4F6 /* ControladorVistaTable.swift in Sources */,
 				0D64ED451C0E40A70048B4F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +256,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 17MemorialPlaces/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jdev.-7MemorialPlaces";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -259,6 +268,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 17MemorialPlaces/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jdev.-7MemorialPlaces";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fbZ-Js-uoN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fbZ-Js-uoN">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -22,9 +22,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="ai9-04-Ali"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -36,14 +33,11 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="LwS-PK-ojl">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="bBN-B8-PZ4">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" identifier="newPlace" id="lXq-jr-p1c"/>
+                                <segue destination="BYZ-38-t0r" kind="show" id="lXq-jr-p1c"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="memorialTable" destination="FjB-eT-PEY" id="hmu-St-rCC"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CMh-g6-ESR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,7 +71,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="satellite" translatesAutoresizingMaskIntoConstraints="NO" id="kl4-ro-Yip">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kl4-ro-Yip">
                                 <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                             </mapView>
                         </subviews>
@@ -100,7 +94,4 @@
             <point key="canvasLocation" x="372.5" y="337.5"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="lXq-jr-p1c"/>
-    </inferredMetricsTieBreakers>
 </document>

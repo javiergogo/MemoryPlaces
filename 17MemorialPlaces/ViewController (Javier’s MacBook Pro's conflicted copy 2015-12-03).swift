@@ -21,39 +21,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         manager = CLLocationManager()
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
-        
-        if activePlace == -1
-        {
-            manager.requestWhenInUseAuthorization()
-            manager.startUpdatingLocation()
-        }
-        else
-        {
-            let latitud = NSString(string: lugares[activePlace]["lat"]!).doubleValue
-            
-            let longitud = NSString(string: lugares[activePlace]["long"]!).doubleValue
-            
-            var coordinate = CLLocationCoordinate2DMake(latitud, longitud)
-            
-            var latDelta:CLLocationDegrees = 0.01
-            var lonDelta:CLLocationDegrees = 0.01
-            
-            var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
-            
-            var region:MKCoordinateRegion = MKCoordinateRegionMake(coordinate, span)
-            
-            self.map.setRegion(region, animated: true)
-            
-           
-            var annotation = MKPointAnnotation()
-            
-            annotation.coordinate = coordinate
-            annotation.title = lugares[activePlace]["name"]
-            
-            self.map.addAnnotation(annotation)
-
-
-        }
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
         
         var uilpgr = UILongPressGestureRecognizer(target: self, action: "accion:")
         
@@ -62,8 +31,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         map.addGestureRecognizer(uilpgr)
     
     }
-    
-
     
     func accion(gestureRecognizer:UIGestureRecognizer)
     {
@@ -113,10 +80,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 annotation.coordinate = newCoordinate
                 annotation.title = titulo
                 
-                //print(annotation.title)
-                //print(annotation.coordinate)
+                print(annotation.title)
+                print(annotation.coordinate)
                 
-                //print(lugares)
+                print(lugares)
                 
                 self.map.addAnnotation(annotation)
                 
